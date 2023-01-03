@@ -18,7 +18,7 @@
   cursor: pointer;
   display: inline-flex;
   font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 30px;
+  font-size: 30px; 
   font-weight: 600;
   justify-content: center;
   line-height: 1.25;
@@ -58,4 +58,11 @@
   align-items: center;
   justify-content: center;
   position: relative;
+}
+h1{
+  font-size: 55px;
+  text-align: center;
+  
+    font-style:initial;
+  
 }
