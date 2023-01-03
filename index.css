@@ -51,7 +51,6 @@
   transform: translateY(0);
 }
 .container {
-  border: 3px solid green;
   height: 200px;
   width: 100%;
   display: inline-flex;
@@ -62,7 +61,9 @@
 h1{
   font-size: 55px;
   text-align: center;
-  
-    font-style:initial;
-  
+  font-style: initial;
+}
+p{
+  text-align: center;
+  font-size: 100px;
 }
