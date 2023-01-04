@@ -1,9 +1,30 @@
 .button {
-    justify-content: center; /*button label centered*/
-    width: 300px; 
-    height: 100px;
-    margin: 50px;
+  justify-content: center; /*button label centered*/
+  width: 300px; 
+  height: 100px;
+  margin: 50px;
+  background-color: #8AA9FF;
+  color: #fff;
+  font-size: 35px;
+  border-radius: 20px;
+  transition: 300ms;
+  font-family: Courier;
+  font-weight: 700;
+  border: 1px;
   }
+.button:hover {
+  background-color: #adc2ff;
+  transform: translateY(5px);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button:active {
+  background-color: #6076b2;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0px);
+}
+
 
 /* CSS */
 .button-5 {
@@ -51,19 +72,19 @@
   transform: translateY(0);
 }
 .container {
+  border: 3px solid wheat;
   height: 200px;
   width: 100%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  background-color: wheat;
 }
 h1{
   font-size: 55px;
   text-align: center;
-  font-style: initial;
-}
-p{
-  text-align: center;
-  font-size: 100px;
+  
+    font-style:initial;
+  
 }
