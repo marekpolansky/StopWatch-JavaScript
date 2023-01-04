@@ -15,7 +15,6 @@ startBtn.addEventListener('click', ()=>
             clearInterval(interval);
         }
         interval = setInterval(displayTimer,10);
-        console.log(interval);
     }
 );
 
@@ -30,7 +29,11 @@ resetBtn.addEventListener('click', ()=>
     {
         clearInterval(interval);
         [milliseconds,seconds,minutes,hours] = [0,0,0,0];
-        displayTimer();
+        timerRef.innerText = '00 : 00 : 00 : 00';
+        pomocna = '0';
+        pomocnami = '0';
+        pomocnam = '0';
+        pomocnah = '0';
     }
 );
 
@@ -74,8 +77,6 @@ function displayTimer(){
     if (hours == 0){
         pomocnah = '0';
     }
-    console.log(pomocnami);
-
     
     timerRef.innerText = pomocnah + hours + ' : ' + pomocnam + minutes + ' : ' + pomocna + seconds + ' : ' + pomocnami + milliseconds / 10;
 }
