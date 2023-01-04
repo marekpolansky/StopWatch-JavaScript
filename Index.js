@@ -1,7 +1,9 @@
 let [milliseconds,seconds,minutes,hours] = [0,0,0,0];
 let timerRef = document.querySelector('.timerDisplay');
 let startBtn = document.getElementById('start');
-let int = null;
+let stopBtn = document.getElementById('stop');
+let resetBtn = document.getElementById('reset');
+let interval = null;
 let pomocna = '0';
 let pomocnami = '0';
 let pomocnam = '0';
@@ -9,10 +11,26 @@ let pomocnah = '0';
 
 startBtn.addEventListener('click', ()=>
     {
-        if(int!==null){
-            clearInterval(int);
+        if(interval!==null){
+            clearInterval(interval);
         }
-        int = setInterval(displayTimer,10);
+        interval = setInterval(displayTimer,10);
+        console.log(interval);
+    }
+);
+
+stopBtn.addEventListener('click', ()=>
+    {
+        /*stopping timer*/
+        clearInterval(interval);
+    }
+);
+
+resetBtn.addEventListener('click', ()=>
+    {
+        clearInterval(interval);
+        [milliseconds,seconds,minutes,hours] = [0,0,0,0];
+        displayTimer();
     }
 );
 
@@ -41,12 +59,12 @@ function displayTimer(){
     if (hours > 9){
         pomocnah = '';
     }
-    if (milliseconds > 9){
+    if (milliseconds > 99){
         pomocnami = '';
     }
-    // if (milliseconds == 0){
-    //     pomocnami = '0';
-    // }
+    if (milliseconds == 0){
+        pomocnami = '0';
+    }
     if (seconds == 0){
         pomocna = '0';
     }
