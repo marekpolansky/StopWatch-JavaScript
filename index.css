@@ -8,9 +8,10 @@
   font-size: 35px;
   border-radius: 20px;
   transition: 300ms;
-  font-family: Courier;
+  /*font-family: Courier;*/
   font-weight: 700;
   border: 1px;
+  box-shadow: green 1px 0 10px;
   }
 .button:hover {
   background-color: #adc2ff;
@@ -72,30 +73,36 @@
   transform: translateY(0);
 }
 .container {
-  border: 3px solid wheat;
+  border: 3px solid #d2d3d7;
   height: 200px;
   width: 100%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: wheat;
+  background-color: #d2d3d7;
 }
 h1{
   font-size: 55px;
   text-align: center;
-  
-    font-style:initial;
+  background-color: #d2d3d7;
+  font-style:initial;
+  color: green;
+  text-shadow: green 1px 0 10px;
   
 }
 .timerDisplay{
-  border: 3px solid wheat;
-  background-color: wheat;
+  border: 3px solid #d2d3d7;
+  background-color: #d2d3d7;
   display: inline-flex;
+  width: 100%;
   position: relative;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  font-size: 50px;
-  font-family: Courier, initial, system-ui, -apple-system;
+  font-size: 70px;
+  font-family: sans-serif;
+  color: #3f3f40;
+}
+body{
+  background-color: #d2d3d7;
 }
